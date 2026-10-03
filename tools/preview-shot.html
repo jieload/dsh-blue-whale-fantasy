@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>whale-dream preview</title>
+<style>
+  html, body { margin: 0; padding: 0; overflow: hidden; background: #000; }
+  img { display: block; width: 1200px; height: 750px; object-fit: cover; }
+</style>
+</head>
+<body>
+  <img id="shot" alt="">
+  <script>
+    const src = new URLSearchParams(location.search).get('src');
+    document.getElementById('shot').src = src;
+  </script>
+</body>
+</html>

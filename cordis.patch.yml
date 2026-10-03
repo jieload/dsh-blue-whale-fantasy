@@ -1,0 +1,6 @@
+# whale-dream bundle patch: mounts the host half of 鲸鱼梦境 into the profile.
+# The host half owns no routes and no UI — it only materializes the skin asset
+# directory into $DSH_HOME/skins/<id>/, where the skin center discovers it.
+- insert:
+    - id: dsh-skin-whale-dream
+      name: dsh-skin-whale-dream

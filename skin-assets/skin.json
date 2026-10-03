@@ -1,0 +1,45 @@
+{
+  "$schema": "https://schemas.linxin666.org/dsh-skin/v2.json",
+  "skinManifestVersion": 2,
+  "id": "whale-dream",
+  "name": "鲸鱼梦境",
+  "nameEn": "Whale Dream",
+  "version": "1.0.0",
+  "author": "本机自制（由 DSH 助手按需生成）",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "tagline": "深海鲸影插画 · 半透明玻璃面板 · 冷蓝调色板",
+  "description": "自制的鲸鱼娘风格皮肤：背景是原创的深海插画（逆光鲸影、光柱、上浮气泡，右侧是背身浮游的鲸鱼少女与指尖微光），插画垫在半透明面板之下，遮罩随亮/暗主题实时切换。亮色是浅海珠白，暗色是深海墨蓝。面板全部走半透明玻璃：底色透明度由皮肤中心的 --dsw-skin-scrim 驱动，背景图始终透出来；青色只给状态（当前项、聚焦、链接）。",
+  "tags": [
+    "whale",
+    "whale-girl",
+    "deep-sea",
+    "illustration",
+    "translucent",
+    "glass",
+    "cold-blue",
+    "custom"
+  ],
+  "accent": "#3FA7DC",
+  "order": 80,
+  "preview": {
+    "light": "preview/light.png",
+    "dark": "preview/dark.png"
+  },
+  "contributes": {
+    "stylesheet": "skin.css",
+    "patches": "patches.css",
+    "backgroundMedia": {
+      "light": {
+        "type": "image",
+        "src": "assets/whale-dream-light.svg",
+        "scrim": "linear-gradient(rgba(247, 252, 255, 0.26) 0%, rgba(230, 244, 252, 0.34) 55%, rgba(214, 236, 249, 0.42) 100%)"
+      },
+      "dark": {
+        "type": "image",
+        "src": "assets/whale-dream-dark.svg",
+        "scrim": "linear-gradient(rgba(4, 7, 16, 0.30) 0%, rgba(7, 22, 41, 0.40) 55%, rgba(4, 15, 28, 0.50) 100%)"
+      }
+    }
+  }
+}
